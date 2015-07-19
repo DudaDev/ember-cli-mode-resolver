@@ -2,7 +2,7 @@
 
 Custom resolver to allow the same route to be resolved as different modes of the application.
 Mode is determined by configuration.
-(A common usage would be a/b testing)
+(A common use case would be a/b testing)
 
 ## Installation
 
