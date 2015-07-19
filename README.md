@@ -1,6 +1,8 @@
 # Ember-cli-mode-resolver
 
-This README outlines the details of collaborating on this Ember addon.
+Custom resolver to allow the same route to be resolved as different modes of the application.
+Mode is determined by configuration.
+(A common usage would be a/b testing)
 
 ## Installation
 
@@ -8,6 +10,11 @@ This README outlines the details of collaborating on this Ember addon.
 * `npm install`
 * `bower install`
 
+## Usage
+### Configuration
+*
+### Naming Convention
+*
 ## Running
 
 * `ember server`
