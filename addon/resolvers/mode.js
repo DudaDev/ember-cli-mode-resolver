@@ -4,28 +4,17 @@ export
 default Resolver.extend({
 	resolveTemplate: function (parsedName) {
 		var parsedNameClone,
-			podsParsedNameClone,
 			root = parsedName.root,
 			resolverMode = root.get('resolverMode'),
 			resolved;
 		if (resolverMode) {
-			var modePostfix = resolverMode.delim + resolverMode.id;
+			var modePosfix = resolverMode.delim + resolverMode.id;
 			
 			parsedNameClone = $.extend({}, parsedName);
-			parsedNameClone.name = parsedName.name + modePostfix;
-			parsedNameClone.fullName = parsedName.fullName + modePostfix;
-			parsedNameClone.fullNameWithoutType = parsedName.fullNameWithoutType + modePostfix;
+			parsedNameClone.name = parsedName.name + modePosfix;
+			parsedNameClone.fullName = parsedName.fullName + modePosfix;
+			parsedNameClone.fullNameWithoutType = parsedName.fullNameWithoutType + modePosfix;
 			resolved = this._super(parsedNameClone);
-			if (!resolved) {
-				if (parsedName.name.includes("doit")){
-					debugger;
-				}
-				podsParsedNameClone = $.extend({}, parsedName);
-				podsParsedNameClone['modePostfix'] = modePostfix;
-				resolved = this._super(podsParsedNameClone);
-
-			}
-
 		}
 		if (!resolved){
 			resolved = this._super(parsedName);
@@ -34,46 +23,24 @@ default Resolver.extend({
 	},
 	resolveOther : function (parsedName) {
 		var parsedNameClone,
-			podsParsedNameClone,
 			root = parsedName.root,
 			resolverMode = root.get('resolverMode'),
 			resolved;
 		if (resolverMode) {
-			var modePostfix = resolverMode.delim + resolverMode.id;
+			var modePosfix = resolverMode.delim + resolverMode.id;
 			parsedNameClone = $.extend({}, parsedName);
-			
 			if (parsedNameClone.name === 'main'){
-				parsedNameClone.type =  parsedName.type + modePostfix;
+				parsedNameClone.type =  parsedName.type + modePosfix;
 			} else {
-				parsedNameClone.name = parsedName.name + modePostfix;
-				parsedNameClone.fullName = parsedName.fullName + modePostfix;
-				parsedNameClone.fullNameWithoutType = parsedName.fullNameWithoutType + modePostfix;
-
+				parsedNameClone.name = parsedName.name + modePosfix;
+				parsedNameClone.fullName = parsedName.fullName + modePosfix;
+				parsedNameClone.fullNameWithoutType = parsedName.fullNameWithoutType + modePosfix;
 			}
 			resolved = this._super(parsedNameClone);
-			if (!resolved) {
-				if (parsedName.name.includes("doit")){
-					debugger;
-				}
-				podsParsedNameClone = $.extend({}, parsedName);
-				podsParsedNameClone['modePostfix'] = modePostfix;
-				resolved = this._super(podsParsedNameClone);
-			}
 		}
 		if (!resolved){
 			resolved = this._super(parsedName);
 		}
 		return resolved;
-	},
-	podBasedLookupWithPrefix: function(podPrefix, parsedName) {
-		var modePostfix= parsedName['modePostfix'];
-		var res = this._super(podPrefix, parsedName);
-		if (parsedName.name.includes("doit")){
-					debugger;
-				}
-		if (modePostfix) {
-			return  res + modePostfix;
-		} 
-		return res;
 	}
 });
