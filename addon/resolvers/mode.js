@@ -1,4 +1,5 @@
 import Resolver from 'ember/resolver';
+import $ from 'jquery';
 
 export
 default Resolver.extend({
