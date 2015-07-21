@@ -30,7 +30,7 @@ App = Ember.Application.extend({
   //current mode configuration
   resolverMode: {
   	id: "a",
-  	delim: "~"
+  	delimiter: "~"
   }
 });
 ```

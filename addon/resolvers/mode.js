@@ -8,7 +8,7 @@ default Resolver.extend({
 			resolverMode = root.get('resolverMode'),
 			resolved;
 		if (resolverMode) {
-			var modePosfix = resolverMode.delim + resolverMode.id;
+			var modePosfix = resolverMode.delimiter + resolverMode.id;
 			
 			parsedNameClone = $.extend({}, parsedName);
 			parsedNameClone.name = parsedName.name + modePosfix;
@@ -27,7 +27,7 @@ default Resolver.extend({
 			resolverMode = root.get('resolverMode'),
 			resolved;
 		if (resolverMode) {
-			var modePosfix = resolverMode.delim + resolverMode.id;
+			var modePosfix = resolverMode.delimiter + resolverMode.id;
 			parsedNameClone = $.extend({}, parsedName);
 			if (parsedNameClone.name === 'main'){
 				parsedNameClone.type =  parsedName.type + modePosfix;

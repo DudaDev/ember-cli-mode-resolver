@@ -13,7 +13,7 @@ App = Ember.Application.extend({
   Resolver: ModeResolver,
   resolverMode: {
   	id: "a",
-  	delim: "~"
+  	delimiter: "~"
   }
 });
 
