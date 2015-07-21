@@ -12,7 +12,7 @@ Mode is determined by configuration.
 
 ## Usage
 ### Configuration
-In your app root (`app.js`) add import to the mode resolver module: 
+In your app root (`app.js`) add import of the mode resolver module: 
 ```javascript
 import ModeResolver from 'ember-cli-mode-resolver/resolvers/mode'
 ```
