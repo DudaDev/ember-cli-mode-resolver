@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-mode-resolver",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A custom ember-cli resolver providing a configurable way to run application in different modes",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/DudaDev/ember-cli-mode-resolver.git",
   "engines": {
     "node": ">= 0.10.0"
   },
