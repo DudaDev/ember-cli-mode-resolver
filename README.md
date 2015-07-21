@@ -1,4 +1,4 @@
-# Ember-cli-mode-resolver
+# ember-cli Mode Resolver
 
 Custom resolver to allow the same route to be resolved as different modes of the application.
 Mode is determined by configuration.
@@ -12,9 +12,32 @@ Mode is determined by configuration.
 
 ## Usage
 ### Configuration
-*
+In your app root (`app.js`) add import to the mode resolver module: 
+```javascript
+import ModeResolver from 'ember-cli-mode-resolver/resolvers/mode'
+```
+Then oveveride the default resolver with mode resolver and define mode configuration:
+```javascript
+var App;
+
+Ember.MODEL_FACTORY_INJECTIONS = true;
+
+App = Ember.Application.extend({
+  modulePrefix: config.modulePrefix,
+  podModulePrefix: config.podModulePrefix,
+  //override resolver
+  Resolver: ModeResolver,
+  //current mode configuration
+  resolverMode: {
+  	id: "a",
+  	delim: "~"
+  }
+});
+```
 ### Naming Convention
-*
+
+#### Pods
+
 ## Running
 
 * `ember server`
