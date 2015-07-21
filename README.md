@@ -4,6 +4,8 @@ Custom resolver to allow the same route to be resolved as different modes of the
 Mode is determined by configuration.
 (A common use case would be a/b testing)
 
+[![Build Status](https://travis-ci.org/DudaDev/ember-cli-mode-resolver.svg)](https://travis-ci.org/DudaDev/ember-cli-mode-resolver) 
+
 ## Installation
 
 * `git clone` this repository
