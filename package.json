@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-mode-resolver",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A custom ember-cli resolver providing a configurable way to run application in different modes",
   "directories": {
     "doc": "doc",
