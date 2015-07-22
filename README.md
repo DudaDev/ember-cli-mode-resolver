@@ -10,7 +10,7 @@ Mode is determined by configuration.
 ## Installation
 
 ```sh
-ember install ember-cli-mode-resolver`
+ember install ember-cli-mode-resolver
 ```
 ## Usage
 ### Configuration
