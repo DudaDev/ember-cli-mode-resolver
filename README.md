@@ -1,10 +1,11 @@
 # ember-cli Mode Resolver
+[![npm version](https://badge.fury.io/js/ember-cli-mode-resolver.svg)](http://badge.fury.io/js/ember-cli-mode-resolver)
+[![Build Status](https://travis-ci.org/DudaDev/ember-cli-mode-resolver.svg)](https://travis-ci.org/DudaDev/ember-cli-mode-resolver) 
+[![Ember Observer Score](http://emberobserver.com/badges/ember-cli-mode-resolver.svg)](http://emberobserver.com/addons/ember-cli-mode-resolver)
 
 Custom resolver to allow the same route to be resolved as different modes of the application.
 Mode is determined by configuration.
-(A common use case would be a/b testing)
-
-[![Build Status](https://travis-ci.org/DudaDev/ember-cli-mode-resolver.svg)](https://travis-ci.org/DudaDev/ember-cli-mode-resolver) 
+(A common use case would be a/b testing) 
 
 ## Installation
 

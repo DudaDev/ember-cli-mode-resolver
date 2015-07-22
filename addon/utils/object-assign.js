@@ -20,7 +20,7 @@ function ownEnumerableKeys(obj) {
 	});
 }
 
-export default (Object.assign || function object_assign(target, /*source*/) {
+export default (Object.assign || function object_assign(target /*, source*/) {
 	var from;
 	var keys;
 	var to = toObject(target);
