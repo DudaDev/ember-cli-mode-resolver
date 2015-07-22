@@ -1,5 +1,5 @@
 import Resolver from 'ember/resolver';
-import $ from 'jquery';
+import assign from '../utils/object-assign';
 
 export
 default Resolver.extend({
@@ -11,7 +11,7 @@ default Resolver.extend({
 		if (resolverMode) {
 			var modePosfix = resolverMode.delimiter + resolverMode.id;
 			
-			parsedNameClone = $.extend({}, parsedName);
+			parsedNameClone = assign({}, parsedName);
 			parsedNameClone.name = parsedName.name + modePosfix;
 			parsedNameClone.fullName = parsedName.fullName + modePosfix;
 			parsedNameClone.fullNameWithoutType = parsedName.fullNameWithoutType + modePosfix;
@@ -29,7 +29,7 @@ default Resolver.extend({
 			resolved;
 		if (resolverMode) {
 			var modePosfix = resolverMode.delimiter + resolverMode.id;
-			parsedNameClone = $.extend({}, parsedName);
+			parsedNameClone = assign({}, parsedName);
 			if (parsedNameClone.name === 'main'){
 				parsedNameClone.type =  parsedName.type + modePosfix;
 			} else {
