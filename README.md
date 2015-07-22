@@ -9,10 +9,9 @@ Mode is determined by configuration.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
-
+```sh
+ember install ember-cli-mode-resolver`
+```
 ## Usage
 ### Configuration
 In your app root (`app.js`) add import of the mode resolver module: 
