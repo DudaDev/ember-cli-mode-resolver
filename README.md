@@ -19,7 +19,7 @@ In your app root (`app.js`) add import of the mode resolver module:
 import ModeResolver from 'ember-cli-mode-resolver/resolvers/mode'
 ```
 Then oveveride the default resolver with mode resolver and define mode configuration:
-```javascript
+<pre lang="javascript"><code>
 var App;
 
 Ember.MODEL_FACTORY_INJECTIONS = true;
@@ -27,7 +27,8 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  //override resolver
+
+    <b>//override resolver</b>
   Resolver: ModeResolver,
   //current mode configuration
   resolverMode: {
@@ -35,12 +36,12 @@ App = Ember.Application.extend({
   	delimiter: "~"
   }
 });
-```
+</code></pre>
 ### Naming Convention
 In order to have a module used when a certain mode is configure, add a the concatenation of **mode delimiter** and **mode id** as a postfix to the module file name. 
 For example if the mode configration is:
 ```javascript 
- resolverMode: {
+  resolverMode: {
   	id: "a",
   	delimiter: "~"
   }
