@@ -49,7 +49,7 @@ For example if the mode configration is:
 and we have a **'fooit'** route module at `/routes/fooit.js`, we can add an altenative **'fooit'** route module that will be resolved in when mode **'a'** id configured - `/routes/fooit~a.js`.
 #### Pods
 The equaivalent case when using pods would be an alrenative to `/fooit/route.js`.
-In this case we will create an alternative **'fooit'** pod folder named **'fooit~a'** and place the alternative **'route.js'** module file there so alternative roue module file will be at `/fooit~a/route.js`. 
+In this case we will create an alternative **'fooit'** pod folder named **'fooit~a'** and place the alternative **'route.js'** module file there so alternative route module file will be at `/fooit~a/route.js`. 
 
 ## Running
 
