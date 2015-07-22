@@ -38,7 +38,7 @@ App = Ember.Application.extend({
 });
 ```
 ### Naming Convention
-In order to have a module used when a certain mode is configure, add a the concatenation of **mode delimiter** and **mode id** as a postfix to the modules filename. 
+In order to have a module used when a certain mode is configure, add a the concatenation of **mode delimiter** and **mode id** as a postfix to the module file name. 
 For example if the mode configration is:
 ```javascript 
  resolverMode: {
