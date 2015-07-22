@@ -1,11 +1,11 @@
 var propIsEnumerable = Object.prototype.propertyIsEnumerable;
 
-function ToObject(val) {
+function toObject(val) {
 	if (val == null) {
 		throw new TypeError('Object.assign cannot be called with null or undefined');
 	}
 
-	return Object(val);
+	return new Object(val);
 }
 
 function ownEnumerableKeys(obj) {
@@ -20,10 +20,10 @@ function ownEnumerableKeys(obj) {
 	});
 }
 
-export default (Object.assign || function object_assign(target, source) {
+export default (Object.assign || function object_assign(target, /*source*/) {
 	var from;
 	var keys;
-	var to = ToObject(target);
+	var to = toObject(target);
 
 	for (var s = 1; s < arguments.length; s++) {
 		from = arguments[s];
