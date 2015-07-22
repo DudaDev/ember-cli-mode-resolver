@@ -29,12 +29,12 @@ App = Ember.Application.extend({
   podModulePrefix: config.podModulePrefix,
 
    //override resolver
-  <b> Resolver: ModeResolver,</b>
-  //current mode configuration
-<b>resolverMode: {
-  	id: "a",
-  	delimiter: "~"
-  }</b>
+   <b>Resolver: ModeResolver,</b>
+   //current mode configuration
+   <b>resolverMode: {</b>
+  	<b>id: "a",</b>
+  	<b>delimiter: "~"</b>
+   <b>}</b>
 });
 </code></pre>
 ### Naming Convention
