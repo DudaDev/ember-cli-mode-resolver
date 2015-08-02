@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/DudaDev/ember-cli-mode-resolver.svg)](https://travis-ci.org/DudaDev/ember-cli-mode-resolver) 
 [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-mode-resolver.svg)](http://emberobserver.com/addons/ember-cli-mode-resolver)
 
-Custom resolver to allow the same route to be resolved as different modes of the application.
+Custom resolver to allow the finding different modules for the same name lookup in different **modes**.
 Mode is determined by configuration.
 (A common use case would be a/b testing) 
 
