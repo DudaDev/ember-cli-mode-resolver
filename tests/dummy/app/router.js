@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
 	this.route('doit', function () {
 		this.route('now');
+		this.route('after');
 	});
 	this.route('fooit');
 });
